@@ -4,7 +4,7 @@
 ```hcl
 module "instance" {
   source  = "Kairat-Z/instance/module"
-  version = "1.0.2"
+  version = "2.0.0"
   instance_type = "t2.micro" # Replace with your value
   instance_name = "Kaizen-Kairat" # Replace with your value
 }
@@ -14,7 +14,7 @@ Please note, you will need a file apache.sh with following parameters to confugi
 
 #!/bin/bash
 
-sudo yum install httpd -y
-sudo systemctl start httpd
-sudo systemctl enable httpd
-
+sudo apt update
+sudo apt install apache2
+sudo systemctl start apache2
+sudo systemctl enable apache2

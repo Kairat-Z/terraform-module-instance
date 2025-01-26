@@ -1,9 +1,5 @@
-provider aws {
-    region = "us-east-2"
-}
-
 resource "aws_instance" "web" {
-  ami           = "ami-0eb070c40e6a142a3"
+  ami           = "ami-0884d2865dbe9de4b"
   instance_type = var.instance_type
   user_data = file("apache.sh")
 
