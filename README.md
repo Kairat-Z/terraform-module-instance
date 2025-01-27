@@ -4,7 +4,7 @@
 ```hcl
 module "instance" {
   source  = "Kairat-Z/instance/module"
-  version = "2.0.0"
+  version = "2.0.3"
   instance_type = "t2.micro" # Replace with your value
   instance_name = "Kaizen-Kairat" # Replace with your value
 }
